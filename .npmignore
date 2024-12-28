@@ -1,0 +1,9 @@
+tests/
+lib/
+docs/
+coverage/
+.github/
+docs-ts.json
+*.config.ts
+*.config.js
+*.config.json
