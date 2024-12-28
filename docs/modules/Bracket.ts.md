@@ -25,16 +25,14 @@ Added in v1.0.0
   - [tapEither](#tapeither)
   - [tapIO](#tapio)
   - [tapTask](#taptask)
-- [constructor](#constructor)
-  - [fromAcquire](#fromacquire)
 - [constructors](#constructors)
+  - [fromAcquire](#fromacquire)
   - [of](#of)
 - [conversions](#conversions)
   - [fromEither](#fromeither)
   - [fromIO](#fromio)
   - [fromTask](#fromtask)
   - [fromTaskEither](#fromtaskeither)
-  - [use](#use)
 - [do notation](#do-notation)
   - [Do](#do)
   - [apS](#aps)
@@ -85,6 +83,7 @@ Added in v1.0.0
   - [URI (type alias)](#uri-type-alias)
 - [utils](#utils)
   - [noDispose](#nodispose)
+  - [use](#use)
 
 ---
 
@@ -197,7 +196,7 @@ export declare const tapTask: {
 
 Added in v1.0.0
 
-# constructor
+# constructors
 
 ## fromAcquire
 
@@ -210,8 +209,6 @@ export declare const fromAcquire: NaturalTransformation22<'TaskEither', 'Bracket
 ```
 
 Added in v1.0.0
-
-# constructors
 
 ## of
 
@@ -261,18 +258,6 @@ Added in v1.0.0
 
 ```ts
 export declare const fromTaskEither: NaturalTransformation22<'TaskEither', 'Bracket'>
-```
-
-Added in v1.0.0
-
-## use
-
-**Signature**
-
-```ts
-export declare const use: <E, R, T>(
-  use: (r: R) => TE.TaskEither<E, T>
-) => (bracket: Bracket<E, R>) => TE.TaskEither<E, T>
 ```
 
 Added in v1.0.0
@@ -775,6 +760,18 @@ Added in v1.0.0
 
 ```ts
 export declare const noDispose: <E>() => TE.TaskEither<E, undefined>
+```
+
+Added in v1.0.0
+
+## use
+
+**Signature**
+
+```ts
+export declare const use: <E, R, T>(
+  use: (r: R) => TE.TaskEither<E, T>
+) => (bracket: Bracket<E, R>) => TE.TaskEither<E, T>
 ```
 
 Added in v1.0.0

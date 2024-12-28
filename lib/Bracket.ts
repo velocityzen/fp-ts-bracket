@@ -99,7 +99,7 @@ export const Bracket =
     TE.bracket(acquire, use, dispose);
 
 /**
- * @category conversions
+ * @category utils
  * @since 1.0.0
  */
 export const use =
@@ -173,7 +173,7 @@ export const fromTaskEither: NaturalTransformation22<TE.URI, URI> = <E, R>(
 /**
  * alias for fromTaskEither
  *
- * @category constructor
+ * @category constructors
  * @since 1.0.0
  */
 export const fromAcquire = fromTaskEither;
