@@ -120,7 +120,7 @@ export const Pointed: Pointed2<URI> = {
  * @category constructors
  * @since 1.0.0
  */
-export const of = <E = never, T = never>(x: T): Bracket<E, T> => Pointed.of(x);
+export const of: <E = never, T = never>(x: T) => Bracket<E, T> = Pointed.of;
 
 /**
  * @category utils
